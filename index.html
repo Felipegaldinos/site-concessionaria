@@ -1,25 +1,421 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vértice Motors | Seu próximo carro, uma nova direção</title>
-<meta name="description" content="Explore a seleção de veículos da Vértice Motors. Compare modelos, filtre por categoria e preço e prepare sua próxima visita com atendimento personalizado.">
-<meta name="theme-color" content="#142a24"><meta name="robots" content="index,follow">
-<meta property="og:title" content="Vértice Motors — Uma nova direção"><meta property="og:description" content="Encontre o carro que combina com a sua próxima fase."><meta property="og:type" content="website"><meta property="og:locale" content="pt_BR">
-<link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
-</head>
-<body>
-<a class="skip" href="#conteudo">Pular para o conteúdo</a>
-<div class="topbar">Uma escolha que move você. Uma experiência que faz a diferença.</div>
-<header class="header"><a class="logo" href="#inicio" aria-label="Vértice Motors, início"><span class="logo-icon">V</span> VÉRTICE<span class="logo-small">MOTORS</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">☰</button><nav id="menu" aria-label="Navegação principal"><a href="#veiculos">Veículos</a><a href="#experiencia">Nossa experiência</a><a href="#depoimentos">Depoimentos</a><a href="#faq">Dúvidas</a><a class="button small" href="#contato">Vamos conversar <span>↗</span></a></nav></header>
-<main id="conteudo">
-<section class="hero" id="inicio"><div class="hero-shade"></div><div class="container hero-content"><span class="eyebrow light">PARA CADA FASE, UMA NOVA DIREÇÃO</span><h1>O próximo capítulo<br>começa ao volante.</h1><p>Mais do que encontrar um carro. Encontre o que combina com seus planos, seu ritmo e sua vida.</p><a class="button" href="#veiculos">Explore nossa seleção <span>↗</span></a><div class="hero-tags"><span>✓ Seleção cuidadosa</span><span>✓ Atendimento próximo</span><span>✓ Negociação transparente</span></div></div><span class="hero-caption">SEU CAMINHO. SUA ESCOLHA.</span></section>
-<section class="container search-wrap" aria-labelledby="busca-titulo"><form id="filters" class="search"><div class="search-heading"><h2 id="busca-titulo">Qual é o seu próximo destino?</h2><span>Encontre o carro para chegar lá.</span></div><div class="filter-fields"><label>O que você procura?<input id="query" type="search" placeholder="Marca ou modelo" autocomplete="off"></label><label>Categoria<select id="category"><option value="">Todas as categorias</option><option>SUV</option><option>Sedã</option><option>Hatch</option></select></label><label>Investimento<select id="price"><option value="">Todas as faixas</option><option value="100000">Até R$ 100 mil</option><option value="160000">Até R$ 160 mil</option><option value="250000">Até R$ 250 mil</option></select></label><button class="button" type="submit">Buscar veículo <span>⌕</span></button></div></form></section>
-<section id="veiculos" class="section container"><div class="section-heading"><div><span class="eyebrow">ESCOLHAS QUE INSPIRAM</span><h2>Um novo olhar para<br>o seu próximo carro.</h2></div><p>Explore modelos que acompanham sua rotina<br>e abrem espaço para novas possibilidades.</p></div><div class="inventory-toolbar"><div class="chips" aria-label="Filtrar categoria"><button class="chip active" data-category="" aria-pressed="true">Todos</button><button class="chip" data-category="SUV" aria-pressed="false">SUVs</button><button class="chip" data-category="Sedã" aria-pressed="false">Sedãs</button><button class="chip" data-category="Hatch" aria-pressed="false">Hatches</button></div><span id="result-count" role="status" aria-live="polite"></span></div><div id="vehicle-grid" class="vehicle-grid"></div><div id="empty" class="empty" hidden><h3>Nenhum veículo nesta combinação.</h3><p>Tente outra categoria ou amplie a faixa de preço.</p><button class="button" id="reset">Limpar filtros</button></div><p class="demo-note">Estoque ilustrativo: veículos, imagens e preços demonstrativos. Consulte disponibilidade e condições antes de negociar. As fotos podem não corresponder à versão anunciada.</p></section>
-<section class="experience section" id="experiencia"><div class="container experience-grid"><div class="experience-photo"><img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=85" alt="Detalhe do interior de um veículo com acabamento premium" loading="lazy"><span class="photo-label">CUIDADO EM CADA DETALHE ↗</span></div><div><span class="eyebrow">A EXPERIÊNCIA VÉRTICE</span><h2>Confiança para escolher.<br>Liberdade para seguir.</h2><p class="muted">Uma boa compra começa com uma boa conversa. Nosso atendimento foi pensado para você entender cada detalhe e decidir no seu tempo.</p><div class="benefit"><span>01</span><div><h3>Seu momento vem primeiro</h3><p>Conte como é sua rotina. Ajudamos a comparar as opções que fazem sentido para você.</p></div></div><div class="benefit"><span>02</span><div><h3>Clareza do início à entrega</h3><p>Informações sobre o veículo e as condições da proposta reunidas para uma decisão consciente.</p></div></div><div class="benefit"><span>03</span><div><h3>O seu usado também tem vez</h3><p>Converse sobre a avaliação do seu carro e conheça as possibilidades de troca.</p></div></div><a class="text-link" href="#contato">Conheça de perto <span>↗</span></a></div></div></section>
-<section id="depoimentos" class="section container"><div class="section-heading"><div><span class="eyebrow">CONEXÕES QUE FICAM</span><h2>O melhor da jornada<br>é quem vem com a gente.</h2></div><p>Exemplos ilustrativos de depoimentos.<br>Substitua por relatos reais autorizados.</p></div><div class="testimonials"><article><span class="stars" aria-label="5 de 5 estrelas">★★★★★</span><blockquote>“Pude comparar os modelos com calma e entender o que realmente fazia sentido para minha rotina.”</blockquote><div class="person"><span>MC</span><div><strong>Marina C.</strong><small>Relato fictício • demonstração</small></div></div></article><article><span class="stars" aria-label="5 de 5 estrelas">★★★★★</span><blockquote>“O atendimento próximo fez toda a diferença. Cada etapa da proposta foi explicada de forma simples.”</blockquote><div class="person"><span>RA</span><div><strong>Rafael A.</strong><small>Relato fictício • demonstração</small></div></div></article><article><span class="stars" aria-label="5 de 5 estrelas">★★★★★</span><blockquote>“Encontramos espaço para os planos da família e uma experiência de compra sem pressa.”</blockquote><div class="person"><span>BL</span><div><strong>Beatriz L.</strong><small>Relato fictício • demonstração</small></div></div></article></div></section>
-<section class="faq-section section" id="faq"><div class="container faq-grid"><div><span class="eyebrow">TUDO ÀS CLARAS</span><h2>Boas perguntas.<br>Respostas diretas.</h2><p class="muted">Para você dar o próximo passo<br>com mais tranquilidade.</p><a class="text-link" href="#contato">Ainda tem uma dúvida? ↗</a></div><div><details><summary>Posso usar meu carro como parte do pagamento?</summary><p>Você pode solicitar uma avaliação. A aceitação e o valor dependem da análise do estado, da documentação e das condições comerciais do veículo.</p></details><details><summary>Como funciona o financiamento?</summary><p>Solicite uma simulação personalizada. Crédito, entrada, parcelas e taxas dependem da instituição financeira e da análise do seu perfil. Compare o custo efetivo total antes de contratar.</p></details><details><summary>É possível agendar um test-drive?</summary><p>Sim. Selecione um veículo e prepare uma solicitação pelo formulário abaixo. A data será combinada com a equipe, conforme a disponibilidade do modelo e os requisitos para dirigir.</p></details><details><summary>Os veículos e preços desta página são reais?</summary><p>Esta é uma landing page demonstrativa de uma marca fictícia. O estoque, os preços e os depoimentos são exemplos. Antes de publicar, substitua os dados pelas informações reais da concessionária.</p></details></div></div></section>
-<section class="container contact-section section" id="contato"><div class="contact-copy"><span class="eyebrow">VAMOS DAR O PRÓXIMO PASSO?</span><h2>Seu próximo carro.<br>Uma conversa de distância.</h2><p>Escolha um modelo, tire suas dúvidas ou planeje uma visita. Vamos começar pelo que é importante para você.</p><div class="contact-detail"><span>↗</span><p><strong>Atendimento sob medida</strong><br>Prepare sua solicitação no formulário ao lado.</p></div><small>Projeto demonstrativo. Configure o canal de atendimento real antes da publicação.</small></div><form id="contact-form" class="contact-form"><h3>Conte o que você procura</h3><label>Seu nome<input name="name" autocomplete="name" required minlength="2" placeholder="Como podemos chamar você?"></label><label>E-mail<input name="email" type="email" autocomplete="email" required placeholder="voce@exemplo.com"></label><label>Mensagem<textarea name="message" rows="3" required minlength="10" placeholder="Quero saber mais sobre um veículo..."></textarea></label><label class="check"><input type="checkbox" required> Entendo que este formulário prepara uma mensagem local e não envia meus dados.</label><button class="button" type="submit">Preparar meu contato <span>↗</span></button><p id="contact-status" role="status" aria-live="polite"></p><div id="message-output" hidden><label>Sua mensagem pronta<textarea id="prepared-message" rows="6" readonly></textarea></label><button type="button" class="text-link" id="copy-message">Copiar mensagem ↗</button></div></form></section>
-</main><footer><div class="container footer-top"><a class="logo" href="#inicio"><span class="logo-icon">V</span> VÉRTICE<span class="logo-small">MOTORS</span></a><p>Novos caminhos começam com boas escolhas.</p><a href="#inicio">Voltar ao topo ↑</a></div><div class="container footer-bottom"><span>© <span id="year"></span> Vértice Motors. Marca fictícia • projeto demonstrativo.</span><span>Feito para o seu próximo capítulo.</span></div></footer>
-<dialog id="vehicle-dialog"><button id="close-dialog" class="dialog-close" aria-label="Fechar detalhes">×</button><div id="dialog-content"></div></dialog>
-</body></html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vértice Motors | Seu próximo carro, uma nova direção</title>
+    <meta
+      name="description"
+      content="Explore a seleção de veículos da Vértice Motors. Compare modelos, filtre por categoria e preço e prepare sua próxima visita com atendimento personalizado."
+    />
+    <meta name="theme-color" content="#142a24" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Vértice Motors — Uma nova direção" />
+    <meta
+      property="og:description"
+      content="Encontre o carro que combina com a sua próxima fase."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+    <div class="topbar">
+      Uma escolha que move você. Uma experiência que faz a diferença.
+    </div>
+    <header class="header">
+      <a class="logo" href="#inicio" aria-label="Vértice Motors, início"
+        ><span class="logo-icon">V</span> VÉRTICE<span class="logo-small"
+          >MOTORS</span
+        ></a
+      ><button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="menu"
+        aria-label="Abrir menu"
+      >
+        ☰
+      </button>
+      <nav id="menu" aria-label="Navegação principal">
+        <a href="#veiculos">Veículos</a
+        > <a href="#sobre-titulo">Sobre nós</a
+        ><a href="#experiencia">Nossa experiência</a
+        ><a href="#depoimentos">Depoimentos</a><a href="#faq">Dúvidas</a
+        ><a class="button small" href="#contato"
+          >Vamos conversar <span>↗</span></a
+        >
+      </nav>
+    </header>
+    <main id="conteudo">
+      <section class="hero" id="inicio">
+        <div class="hero-shade"></div>
+        <div class="container hero-content">
+          <span class="eyebrow light">PARA CADA FASE, UMA NOVA DIREÇÃO</span>
+          <h1>O próximo capítulo<br />começa ao volante.</h1>
+          <p>
+            Mais do que encontrar um carro. Encontre o que combina com seus
+            planos, seu ritmo e sua vida.
+          </p>
+          <a class="button" href="#veiculos"
+            >Explore nossa seleção <span>↗</span></a
+          >
+          <div class="hero-tags">
+            <span>✓ Seleção cuidadosa</span><span>✓ Atendimento próximo</span
+            ><span>✓ Negociação transparente</span>
+          </div>
+        </div>
+        <span class="hero-caption">SEU CAMINHO. SUA ESCOLHA.</span>
+      </section>
+      <section class="container search-wrap" aria-labelledby="busca-titulo">
+        <form id="filters" class="search">
+          <div class="search-heading">
+            <h2 id="busca-titulo">Qual é o seu próximo destino?</h2>
+            <span>Encontre o carro para chegar lá.</span>
+          </div>
+          <div class="filter-fields">
+            <label
+              >O que você procura?<input
+                id="query"
+                type="search"
+                placeholder="Marca ou modelo"
+                autocomplete="off" /></label
+            ><label
+              >Categoria<select id="category">
+                <option value="">Todas as categorias</option>
+                <option>SUV</option>
+                <option>Sedã</option>
+                <option>Hatch</option>
+              </select></label
+            ><label
+              >Investimento<select id="price">
+                <option value="">Todas as faixas</option>
+                <option value="100000">Até R$ 100 mil</option>
+                <option value="160000">Até R$ 160 mil</option>
+                <option value="250000">Até R$ 250 mil</option>
+              </select></label
+            ><button class="button" type="submit">
+              Buscar veículo <span>⌕</span>
+            </button>
+          </div>
+        </form>
+      </section>
+      <section id="veiculos" class="section container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">ESCOLHAS QUE INSPIRAM</span>
+            <h2>Um novo olhar para<br />o seu próximo carro.</h2>
+          </div>
+          <p>
+            Explore modelos que acompanham sua rotina<br />e abrem espaço para
+            novas possibilidades.
+          </p>
+        </div>
+        <div class="inventory-toolbar">
+          <div class="chips" aria-label="Filtrar categoria">
+            <button class="chip active" data-category="" aria-pressed="true">
+              Todos</button
+            ><button class="chip" data-category="SUV" aria-pressed="false">
+              SUVs</button
+            ><button class="chip" data-category="Sedã" aria-pressed="false">
+              Sedãs</button
+            ><button class="chip" data-category="Hatch" aria-pressed="false">
+              Hatches
+            </button>
+          </div>
+          <span id="result-count" role="status" aria-live="polite"></span>
+        </div>
+        <div id="vehicle-grid" class="vehicle-grid"></div>
+        <div id="empty" class="empty" hidden>
+          <h3>Nenhum veículo nesta combinação.</h3>
+          <p>Tente outra categoria ou amplie a faixa de preço.</p>
+          <button class="button" id="reset">Limpar filtros</button>
+        </div>
+        <p class="demo-note">
+          Estoque ilustrativo: veículos, imagens e preços demonstrativos.
+          Consulte disponibilidade e condições antes de negociar. As fotos podem
+          não corresponder à versão anunciada.
+        </p>
+      </section>
+      <section class="about-section section" id="sobre" aria-labelledby="sobre-titulo">
+        <div class="container about-grid">
+          <div>
+            <span class="eyebrow">SOBRE A VÉRTICE MOTORS</span>
+            <h2 id="sobre-titulo">Carros conectam destinos.<br />Pessoas dão sentido à jornada.</h2>
+            <img class="about-image" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Automóvel esportivo estacionado, visto de frente" loading="lazy" width="1100" height="620" />
+          </div>
+          <div class="about-copy">
+            <p>Na Vértice Motors, acreditamos que escolher um veículo é escolher como viver os próximos caminhos. É o espaço para a família, a companhia no trabalho e a liberdade de sair da rotina.</p>
+            <p>Por isso, nossa proposta reúne uma seleção de veículos e um atendimento que começa pela escuta. Queremos entender suas prioridades, apresentar possibilidades e ajudar você a comparar cada opção com clareza.</p>
+            <p>Do primeiro contato à decisão, valorizamos uma relação próxima, respeitosa e transparente. Para que você encontre um carro que faça sentido hoje e acompanhe os planos de amanhã.</p>
+            <a class="text-link" href="#valores">Conheça o que nos move <span aria-hidden="true">↘</span></a>
+          </div>
+        </div>
+      </section>
+      <section class="values-section section" id="valores" aria-labelledby="valores-titulo">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">NOSSOS VALORES</span>
+              <h2 id="valores-titulo">O que nos move.<br />O que guia cada escolha.</h2>
+            </div>
+            <p>Mais do que palavras, princípios para orientar<br />a forma como queremos atender você.</p>
+          </div>
+          <div class="values-grid">
+            <article class="value-card"><span class="value-number" aria-hidden="true">01 /</span><h3>Transparência</h3><p>Informações claras sobre os veículos e as condições da negociação, com espaço para perguntar e entender cada detalhe.</p></article>
+            <article class="value-card"><span class="value-number" aria-hidden="true">02 /</span><h3>Respeito por você</h3><p>Escutar suas necessidades, respeitar seu orçamento e dar tempo para uma decisão que seja realmente sua.</p></article>
+            <article class="value-card"><span class="value-number" aria-hidden="true">03 /</span><h3>Cuidado na escolha</h3><p>Atenção à seleção e à apresentação de cada veículo, valorizando os detalhes que importam no seu dia a dia.</p></article>
+            <article class="value-card"><span class="value-number" aria-hidden="true">04 /</span><h3>Compromisso nas relações</h3><p>Alinhar expectativas, tratar cada conversa com responsabilidade e construir confiança em cada etapa da jornada.</p></article>
+          </div>
+        </div>
+      </section>
+      <section class="experience section" id="experiencia">
+        <div class="container experience-grid">
+          <div class="experience-photo">
+            <img
+              src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=85"
+              alt="Detalhe do interior de um veículo com acabamento premium"
+              loading="lazy"
+            /><span class="photo-label">CUIDADO EM CADA DETALHE ↗</span>
+          </div>
+          <div>
+            <span class="eyebrow">A EXPERIÊNCIA VÉRTICE</span>
+            <h2>Confiança para escolher.<br />Liberdade para seguir.</h2>
+            <p class="muted">
+              Uma boa compra começa com uma boa conversa. Nosso atendimento foi
+              pensado para você entender cada detalhe e decidir no seu tempo.
+            </p>
+            <div class="benefit">
+              <span>01</span>
+              <div>
+                <h3>Seu momento vem primeiro</h3>
+                <p>
+                  Conte como é sua rotina. Ajudamos a comparar as opções que
+                  fazem sentido para você.
+                </p>
+              </div>
+            </div>
+            <div class="benefit">
+              <span>02</span>
+              <div>
+                <h3>Clareza do início à entrega</h3>
+                <p>
+                  Informações sobre o veículo e as condições da proposta
+                  reunidas para uma decisão consciente.
+                </p>
+              </div>
+            </div>
+            <div class="benefit">
+              <span>03</span>
+              <div>
+                <h3>O seu usado também tem vez</h3>
+                <p>
+                  Converse sobre a avaliação do seu carro e conheça as
+                  possibilidades de troca.
+                </p>
+              </div>
+            </div>
+            <a class="text-link" href="#contato"
+              >Conheça de perto <span>↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="depoimentos" class="section container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">CONEXÕES QUE FICAM</span>
+            <h2>O melhor da jornada<br />é quem vem com a gente.</h2>
+          </div>
+          <p>
+            Exemplos ilustrativos de depoimentos.<br />Substitua por relatos
+            reais autorizados.
+          </p>
+        </div>
+        <div class="testimonials">
+          <article>
+            <span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
+            <blockquote>
+              “Pude comparar os modelos com calma e entender o que realmente
+              fazia sentido para minha rotina.”
+            </blockquote>
+            <div class="person">
+              <span>MC</span>
+              <div>
+                <strong>Marina C.</strong
+                ><small>Relato fictício • demonstração</small>
+              </div>
+            </div>
+          </article>
+          <article>
+            <span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
+            <blockquote>
+              “O atendimento próximo fez toda a diferença. Cada etapa da
+              proposta foi explicada de forma simples.”
+            </blockquote>
+            <div class="person">
+              <span>RA</span>
+              <div>
+                <strong>Rafael A.</strong
+                ><small>Relato fictício • demonstração</small>
+              </div>
+            </div>
+          </article>
+          <article>
+            <span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
+            <blockquote>
+              “Encontramos espaço para os planos da família e uma experiência de
+              compra sem pressa.”
+            </blockquote>
+            <div class="person">
+              <span>BL</span>
+              <div>
+                <strong>Beatriz L.</strong
+                ><small>Relato fictício • demonstração</small>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="faq-section section" id="faq">
+        <div class="container faq-grid">
+          <div>
+            <span class="eyebrow">TUDO ÀS CLARAS</span>
+            <h2>Boas perguntas.<br />Respostas diretas.</h2>
+            <p class="muted">
+              Para você dar o próximo passo<br />com mais tranquilidade.
+            </p>
+            <a class="text-link" href="#contato">Ainda tem uma dúvida? ↗</a>
+          </div>
+          <div>
+            <details>
+              <summary>Posso usar meu carro como parte do pagamento?</summary>
+              <p>
+                Você pode solicitar uma avaliação. A aceitação e o valor
+                dependem da análise do estado, da documentação e das condições
+                comerciais do veículo.
+              </p>
+            </details>
+            <details>
+              <summary>Como funciona o financiamento?</summary>
+              <p>
+                Solicite uma simulação personalizada. Crédito, entrada, parcelas
+                e taxas dependem da instituição financeira e da análise do seu
+                perfil. Compare o custo efetivo total antes de contratar.
+              </p>
+            </details>
+            <details>
+              <summary>É possível agendar um test-drive?</summary>
+              <p>
+                Sim. Selecione um veículo e prepare uma solicitação pelo
+                formulário abaixo. A data será combinada com a equipe, conforme
+                a disponibilidade do modelo e os requisitos para dirigir.
+              </p>
+            </details>
+            <details>
+              <summary>Os veículos e preços desta página são reais?</summary>
+              <p>
+                Esta é uma landing page demonstrativa de uma marca fictícia. O
+                estoque, os preços e os depoimentos são exemplos. Antes de
+                publicar, substitua os dados pelas informações reais da
+                concessionária.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="container contact-section section" id="contato">
+        <div class="contact-copy">
+          <span class="eyebrow">VAMOS DAR O PRÓXIMO PASSO?</span>
+          <h2>Seu próximo carro.<br />Uma conversa de distância.</h2>
+          <p>
+            Escolha um modelo, tire suas dúvidas ou planeje uma visita. Vamos
+            começar pelo que é importante para você.
+          </p>
+          <div class="contact-detail">
+            <span>↗</span>
+            <p>
+              <strong>Atendimento sob medida</strong><br />Prepare sua
+              solicitação no formulário ao lado.
+            </p>
+          </div>
+          <small
+            >Projeto demonstrativo. Configure o canal de atendimento real antes
+            da publicação.</small
+          >
+        </div>
+        <form id="contact-form" class="contact-form">
+          <h3>Conte o que você procura</h3>
+          <label
+            >Seu nome<input
+              name="name"
+              autocomplete="name"
+              required
+              minlength="2"
+              placeholder="Como podemos chamar você?" /></label
+          ><label
+            >E-mail<input
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+              placeholder="voce@exemplo.com" /></label
+          ><label
+            >Mensagem<textarea
+              name="message"
+              rows="3"
+              required
+              minlength="10"
+              placeholder="Quero saber mais sobre um veículo..."
+            ></textarea></label
+          ><label class="check"
+            ><input type="checkbox" required /> Entendo que este formulário
+            prepara uma mensagem local e não envia meus dados.</label
+          ><button class="button" type="submit">
+            Preparar meu contato <span>↗</span>
+          </button>
+          <p id="contact-status" role="status" aria-live="polite"></p>
+          <div id="message-output" hidden>
+            <label
+              >Sua mensagem pronta<textarea
+                id="prepared-message"
+                rows="6"
+                readonly
+              ></textarea></label
+            ><button type="button" class="text-link" id="copy-message">
+              Copiar mensagem ↗
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-top">
+        <a class="logo" href="#inicio"
+          ><span class="logo-icon">V</span> VÉRTICE<span class="logo-small"
+            >MOTORS</span
+          ></a
+        >
+        <p>Novos caminhos começam com boas escolhas.</p>
+        <a href="#inicio">Voltar ao topo ↑</a>
+      </div>
+      <div class="container footer-bottom">
+        <span
+          >© <span id="year"></span> Vértice Motors. Marca fictícia • projeto
+          demonstrativo.</span
+        ><span>Feito para o seu próximo capítulo.</span>
+      </div>
+    </footer>
+    <dialog id="vehicle-dialog">
+      <button
+        id="close-dialog"
+        class="dialog-close"
+        aria-label="Fechar detalhes"
+      >
+        ×
+      </button>
+      <div id="dialog-content"></div>
+    </dialog>
+  </body>
+</html>
