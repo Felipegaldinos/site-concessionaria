@@ -10,7 +10,7 @@ const vehicles = [
     year: 2022,
     km: "32.000",
     price: 239900,
-    photo: "photo-1651051341354-79ae3b91c3dc",
+    photo: "assets/xc60.png",
     fallback: "photo-1606664515524-ed2f786a0bd6",
   },
   {
@@ -22,7 +22,7 @@ const vehicles = [
     year: 2021,
     km: "41.000",
     price: 219900,
-    photo: "photo-1555215695-3004980ad54e",
+    photo: "assets/320i.png",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const vehicles = [
     year: 2020,
     km: "48.000",
     price: 159900,
-    photo: "photo-1618843479313-40f8afb4b4d8",
+    photo: "assets/classe-a.png",
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const vehicles = [
     year: 2021,
     km: "39.000",
     price: 189900,
-    photo: "photo-1606664515524-ed2f786a0bd6",
+    photo: "assets/q3.png",
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ const vehicles = [
     year: 2023,
     km: "24.000",
     price: 94900,
-    photo: "photo-1625231334168-35067f8853ed",
+    photo: "assets/polo.png",
     fallback: "photo-1503376780353-7e6692767b70",
   },
   {
@@ -67,7 +67,7 @@ const vehicles = [
     year: 2022,
     km: "35.000",
     price: 139900,
-    photo: "photo-1621007947382-bb3c3994e3fb",
+    photo: "assets/corolla.png",
   },
 ];
 const money = new Intl.NumberFormat("pt-BR", {
@@ -80,8 +80,7 @@ const query = document.querySelector("#query");
 const category = document.querySelector("#category");
 const price = document.querySelector("#price");
 const dialog = document.querySelector("#vehicle-dialog");
-const imageUrl = (photo) =>
-  `https://images.unsplash.com/${photo}?auto=format&fit=crop&w=900&q=85`;
+const imageUrl = (photo) => photo;
 const normalize = (value) =>
   value
     .normalize("NFD")
